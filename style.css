@@ -1,0 +1,94 @@
+body {
+  margin: auto;
+  max-width: 1250px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 12fr 12fr;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.1rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: -3rem 0.1rem 0.1rem 0.1rem;
+  padding: 5rem;
+  border-right: 0.3rem solid black;
+  border-bottom: 0.3rem solid black;
+}
+
+main:hover .content {
+  opacity: 1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skl-body {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.1rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-about {
+  text-align: center;
+  font-size: 6.7rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-down {
+  text-transform: lowercase;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.icons {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.icons > a {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 5rem;
+  }
+
+  section > a {
+    font-size: 5rem;
+  }
+}

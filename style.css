@@ -48,19 +48,21 @@ section {
   text-align: center;
 }
 
-.ex-body {
-  width: 100%;
+.content-body {
+  width: 80%;
 }
 
-.skl-body {
+.end {
   display: flex;
+  margin-top: 1rem;
   flex-direction: column;
-  font-size: 0.1rem;
+  text-decoration: none;
   font-family: "Alegreya Sans SC", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
 
-.text-about {
+.about-title {
+  margin-top: 5rem;
   text-align: center;
   font-size: 5rem;
   font-family: "Poppins", sans-serif;
@@ -73,9 +75,7 @@ section {
 .content {
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  line-height: 1.9;
   opacity: 0;
   transition: 0.5s ease;
   background-color: white;
@@ -86,26 +86,50 @@ section {
   font-size: 3rem;
 }
 
-.icons > a {
+.icons > a,
+.ex-body > a {
+  text-decoration: none;
   color: black;
 }
 
 @media (min-width: 768px) {
+  .wrapper {
+    margin-top: -2rem;
+  }
+
   h2 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
-  section > a {
-    font-size: 5rem;
+  .content {
+    top: -9rem;
+    line-height: 1.6;
   }
 
-  .text-about {
+  .about-title {
+    margin-top: -1rem;
     font-size: 10rem;
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .content-body {
+    width: 100%;
+    margin-top: -1rem;
   }
 
   h3,
   h4,
-  .skl-body {
-    font-size: 1rem;
+  .end {
+    font-size: 1.2rem;
+  }
+
+  .content-body > a {
+    line-height: 3;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
   }
 }

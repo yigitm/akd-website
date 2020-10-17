@@ -120,6 +120,7 @@ section {
   .about-title {
     padding-top: 0;
     padding-bottom: 8rem;
+    font-size: 10rem;
   }
 
   .icons {
@@ -134,10 +135,6 @@ section {
   .content {
     margin-top: -1rem;
     line-height: 1.6;
-  }
-
-  .about-title {
-    font-size: 10rem;
   }
 
   .content-title {

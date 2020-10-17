@@ -111,12 +111,6 @@ section {
   flex-direction: column;
 }
 
-@media (min-width: 300px) {
-  .content {
-    top: -3.5rem;
-  }
-}
-
 @media (min-width: 768px) {
   .wrapper {
     margin-top: -2rem;

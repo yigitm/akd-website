@@ -10,19 +10,22 @@ body {
   min-height: 100vh;
 }
 
+.name {
+  margin: 0.5rem;
+  text-align: left;
+  font-size: 0.7rem;
+}
+
 h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.25rem;
-  font-family: "Alegreya Sans SC", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
 
 h3 {
-  text-align: center;
   text-transform: uppercase;
-  font-size: 0.1rem;
-  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 0.7rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -45,22 +48,25 @@ main:hover {
 
 section {
   display: flex;
+  margin-top: -6rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.content-body {
+.content-body,
+.content-indent {
+  text-align: justify;
   width: 80%;
 }
 
-.end {
-  display: flex;
-  margin-top: 1rem;
-  flex-direction: column;
-  text-decoration: none;
-  font-family: "Alegreya Sans SC", sans-serif;
-  font-family: "Montserrat", sans-serif;
+.content-body,
+.content-indent {
+  text-indent: 1.5rem;
+}
+
+.medium-text {
+  margin-left: -1.3rem;
 }
 
 .about-title {
@@ -76,7 +82,7 @@ section {
 
 .content {
   position: absolute;
-  line-height: 1.9;
+  line-height: 1.6;
   opacity: 0;
   transition: 0.5s ease;
   background-color: white;
@@ -84,6 +90,7 @@ section {
 
 .icons {
   display: flex;
+  margin-top: 2rem;
   justify-content: center;
   font-size: 2rem;
 }

@@ -5,8 +5,8 @@ body {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-rows: 12fr 12fr;
+  display: -ms-grid;
+  grid-template-columns: 12fr 12fr;
   min-height: 100vh;
 }
 
@@ -35,6 +35,14 @@ main {
   border-bottom: 0.3rem solid;
 }
 
+.content {
+  position: absolute;
+  line-height: 1.6;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
 main:hover .content {
   opacity: 1;
 }
@@ -54,12 +62,8 @@ section {
 .content-body,
 .content-indent {
   text-align: justify;
-  width: 80%;
-}
-
-.content-body,
-.content-indent {
   text-indent: 1.5rem;
+  width: 80%;
 }
 
 .medium-text {
@@ -75,14 +79,6 @@ section {
 
 .text-down {
   text-transform: lowercase;
-}
-
-.content {
-  position: absolute;
-  line-height: 1.6;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: white;
 }
 
 .icons {

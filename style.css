@@ -99,9 +99,8 @@ section {
 
 .icons > a,
 .content-body > a,
-.icons-aol > a,
-.icons-gmail > a {
-  margin-right: 0.2rem;
+.icons-text > a {
+  margin-right: 0.3rem;
   text-decoration: none;
   color: black;
 }

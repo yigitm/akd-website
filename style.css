@@ -29,6 +29,7 @@ main {
   position: relative;
   display: flex;
   margin-top: -7rem;
+  margin-bottom: 1rem;
   flex-direction: column;
   border-right: 0.3rem solid;
   border-bottom: 0.3rem solid;
@@ -138,7 +139,6 @@ section {
   }
 
   .about-title {
-    margin-top: -1rem;
     font-size: 10rem;
   }
 

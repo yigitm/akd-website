@@ -7,6 +7,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-rows: 12fr 12fr;
+  min-height: 100vh;
 }
 
 h2 {
@@ -28,6 +29,7 @@ h3 {
 main {
   position: relative;
   display: flex;
+  margin-top: -7rem;
   flex-direction: column;
   border-right: 0.3rem solid;
   border-bottom: 0.3rem solid;
@@ -74,7 +76,6 @@ section {
 
 .content {
   position: absolute;
-  top: 0;
   line-height: 1.9;
   opacity: 0;
   transition: 0.5s ease;
@@ -110,13 +111,32 @@ section {
   flex-direction: column;
 }
 
+@media (min-width: 300px) {
+  .content {
+    top: -3.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .wrapper {
     margin-top: -2rem;
   }
 
+  main {
+    margin-top: -3rem;
+  }
+
   h2 {
     font-size: 3rem;
+  }
+
+  .icons {
+    font-size: 3rem;
+  }
+
+  .icons-tag {
+    margin-top: -0.2rem;
+    font-size: 0.9rem;
   }
 
   .content {

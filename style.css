@@ -1,13 +1,12 @@
 body {
   margin: auto;
   min-width: 300px;
-  max-width: 990px;
+  max-width: 1250px;
 }
 
 .wrapper {
   display: -ms-grid;
   grid-template-columns: 12fr 12fr;
-  min-height: 100vh;
 }
 
 h2 {
@@ -28,8 +27,7 @@ h3 {
 main {
   position: relative;
   display: flex;
-  margin-top: -7rem;
-  margin-bottom: 1rem;
+  right: 0.1rem;
   flex-direction: column;
   border-right: 0.3rem solid;
   border-bottom: 0.3rem solid;
@@ -53,7 +51,6 @@ main:hover {
 
 section {
   display: flex;
-  margin-top: -6rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -71,7 +68,8 @@ section {
 }
 
 .about-title {
-  margin-top: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center;
   font-size: 5rem;
   font-family: "Poppins", sans-serif;
@@ -115,6 +113,15 @@ section {
     margin-top: 0;
   }
 
+  main {
+    right: 0;
+  }
+
+  .about-title {
+    padding-top: 0;
+    padding-bottom: 8rem;
+  }
+
   .icons {
     font-size: 3rem;
   }
@@ -124,12 +131,8 @@ section {
     font-size: 0.9rem;
   }
 
-  section {
-    margin-top: 0;
-  }
-
   .content {
-    top: -8rem;
+    margin-top: -1rem;
     line-height: 1.6;
   }
 
@@ -143,7 +146,6 @@ section {
 
   .content-body {
     width: 100%;
-    margin-top: -1rem;
   }
 
   h2 {
@@ -157,10 +159,5 @@ section {
   h4,
   .end {
     font-size: 1.2rem;
-  }
-
-  .content-body > a {
-    line-height: 3;
-    font-size: 1.5rem;
   }
 }
